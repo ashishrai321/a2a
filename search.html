@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="msapplication-tap-highlight" content="no">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="assets/js/lib.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+<div class="loader"> <img src="assets/images/profile/logoCore.png" alt=""> <span>loading..</span> </div>
+<div class="mainWrapper">
+  <header class="main">
+    <div class="rSkew"> <a href="index.html" class="logo"><img src="assets/images/profile/logoWhiteNoCore.png" alt=""> <span><img src="assets/images/profile/logoCore.png" alt="" class="core"></span></a> </div>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html#aboutUs">About Us</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#contactUs">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="filter form">
+    <fieldset class="cusSelect">
+      <select class="change_service">
+        <option value="">Find your product..</option>
+        <option value="http://www.honkamp.com/service/accounting-audit-assurance-services/">Accounting, Audit &amp; Assurance Services</option>
+        <option value="http://www.honkamp.com/hk_service/accounting/" class="padL10" >Accounting</option>
+        <option value="http://www.honkamp.com/hk_service/audits/" class="padL10" >Audits</option>
+        <option value="http://www.honkamp.com/hk_service/employee-benefit-plan-audits/" class="padL10" >Employee Benefit Plan Audits</option>
+        <option value="http://www.honkamp.com/service/advisory-services/">Advisory Services</option>
+        <option value="http://www.honkamp.com/hk_service/decision-support-services/" class="padL10" >Decision Support Services</option>
+        <option value="http://www.honkamp.com/hk_service/business-consulting/" class="padL10" >Business Consulting</option>
+        <option value="http://www.honkamp.com/hk_service/health-care-practice-consulting/" class="padL10" >Health Care Practice Consulting</option>
+        <option value="http://www.honkamp.com/hk_service/marketing-consulting/" class="padL10" >Marketing Consulting</option>
+        <option value="http://www.honkamp.com/hk_service/strategic-planning/" class="padL10" >Strategic Planning</option>
+        <option value="http://www.honkamp.com/hk_service/succession-planning/" class="padL10" >Succession &#038; Exit Planning</option>
+        <option value="http://www.honkamp.com/service/valuation-transaction-services/">Business Transition &amp; Valuation</option>
+        <option value="http://www.honkamp.com/hk_service/business-valuation/" class="padL10" >Business Valuation</option>
+        <option value="http://www.honkamp.com/hk_service/litigation-support/" class="padL10" >Litigation Support</option>
+        <option value="http://www.honkamp.com/hk_service/mergers-acquisitions/" class="padL10" >Mergers &#038; Acquisitions</option>
+        <option value="http://www.honkamp.com/hk_service/succession-planning/" class="padL10" >Succession &#038; Exit Planning</option>
+        <option value="http://www.honkamp.com/service/financial-advisory-services/">Financial Advisory Services</option>
+        <option value="http://www.hkfs.com/hkfs_service/asset-management" class="padL10" data-target="blank">Asset Management</option>
+        <option value="http://www.hkfs.com/hkfs_service/brokerage" class="padL10" data-target="blank">Brokerage</option>
+        <option value="http://www.honkamp.com/hk_service/estate-planning/" class="padL10" >Estate Planning</option>
+        <option value="http://www.honkamp.com/hk_service/financial-planning/" class="padL10" >Financial Planning</option>
+        <option value="http://www.honkamp.com/hk_service/financial-life-planning/" class="padL10" >Financial Life Planning</option>
+        <option value="http://www.hkfsretirement.com/" class="padL10" data-target="blank">Retirement Plans</option>
+        <option value="http://www.hkfs.com/hkfs_services/risk-management-services/" class="padL10" data-target="blank">Risk Management</option>
+        <option value="http://www.honkamp.com/hk_service/social-security-consulting/" class="padL10" >Social Security Consulting</option>
+        <option value="http://www.honkamp.com/service/governance-risk-compliance-services/">Governance, Risk &amp; Compliance Services</option>
+        <option value="http://www.honkamp.com/hk_service/alta-best-practices/" class="padL10" >ALTA Best Practices</option>
+        <option value="http://www.honkamp.com/hk_service/compliance/" class="padL10" >Compliance</option>
+        <option value="http://www.honkamp.com/hk_service/construction-audits/" class="padL10" >Construction Audits</option>
+        <option value="http://www.honkamp.com/hk_service/fraud-forensics/" class="padL10" >Fraud &#038; Forensics</option>
+        <option value="http://www.honkamp.com/hk_service/id-theft-protection/" class="padL10" >ID Theft Protection</option>
+        <option value="http://www.honkamp.com/hk_service/internal-audit/" class="padL10" >Internal Audit</option>
+        <option value="http://www.honkamp.com/hk_service/quality-assessment-reviews/" class="padL10" >Quality Assessment Reviews</option>
+        <option value="http://www.hkpayroll.com/services" data-target="blank">Human Capital Services</option>
+        <option value="http://www.hkpayroll.com/hkp_service/benefits-consulting" class="padL10" data-target="blank">Benefits Consulting</option>
+        <option value="http://www.hkpayroll.com/hkp_service/human-resource-consulting" class="padL10" data-target="blank">Human Resource Consulting</option>
+        <option value="http://www.hkpayroll.com/hkp_service/hr-benefits" class="padL10" data-target="blank">HR/Benefits</option>
+        <option value="http://www.hkpayroll.com/hkp_service/payroll" class="padL10" data-target="blank">Payroll</option>
+        <option value="http://www.honkamp.com/hk_service/talent-outsourcing/" class="padL10" >Talent Outsourcing</option>
+        <option value="http://www.hkpayroll.com/hkp_service/tax-credits/" class="padL10" data-target="blank">Tax Credits &#8211; Employment</option>
+        <option value="http://www.hkpayroll.com/hkp_services/time-attendance/" class="padL10" data-target="blank">Time &#038; Attendance</option>
+        <option value="http://www.honkamp.com/software-solutions-group/" data-target="blank">Software Solutions Services</option>
+        <option value="http://www.honkamp.com/hk_service/accounting-software/" class="padL10" >Accounting Software</option>
+        <option value="http://www.honkamp.com/hk_service/project-management/" class="padL10" >Project Management</option>
+        <option value="http://www.honkamp.com/hk_service/software-requirements-analysis/" class="padL10" >Software Requirements Analysis</option>
+        <option value="http://www.honkamp.com/hk_service/systems-consulting/" class="padL10" >Systems Consulting</option>
+        <option value="http://www.honkamp.com/service/tax-services/">Tax Services</option>
+        <option value="http://www.honkamp.com/hk_service/cost-segregation/" class="padL10" >Cost Segregation</option>
+        <option value="http://www.honkamp.com/hk_service/state-and-local-tax/" class="padL10" >State &#038; Local Tax (SALT)</option>
+        <option value="http://www.honkamp.com/hk_service/tax-credits-rd/" class="padL10" >Tax Credits &#8211; R&#038;D</option>
+        <option value="http://www.honkamp.com/hk_service/tax-planning-preparation/" class="padL10" >Tax Planning &#038; Preparation</option>
+        <option value="http://www.honkamp.com/hk_service/tax-representation-irs-state/" class="padL10" >Tax Representation &#8211; IRS &#038; State</option>
+      </select>
+    </fieldset>
+  </aside>
+  <main>
+    <aside class="subNav" id="subNav">
+      <div class="filter">
+        <div class="filterBlock">
+          <h4>Category</h4>
+          <ul class="list cusCheck">
+            <li>
+              <input type="checkbox" name="category" value="alloyWheels" id="cat_alloyWheels">
+              <label for="cat_alloyWheels">Alloy Wheels</label>
+            </li>
+            <li>
+              <input type="checkbox" name="category" value="silencers" id="cat_silencers">
+              <label for="cat_silencers">Silencers</label>
+            </li>
+            <li>
+              <input type="checkbox" name="category" value="protectors" id="cat_protectors">
+              <label for="cat_protectors">Protectors</label>
+            </li>
+            <li>
+              <input type="checkbox" name="category" value="lightAndSound" id="cat_lightAndSound">
+              <label for="cat_lightAndSound">Light & Sound</label>
+            </li>
+            <li>
+              <input type="checkbox" name="category" value="covers" id="cat_covers">
+              <label for="cat_covers">Covers</label for="cat_covers">
+            </li>
+            <li>
+              <input type="checkbox" name="category" value="styleAttributes" id="cat_styleAttributes">
+              <label for="cat_styleAttributes">Style Attributes</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filterBlock optFilter">
+          <h4>Brand</h4>
+          <ul class="list cusCheck">
+            <li>
+              <input type="checkbox" name="brand" value="parado" id="brand_parado">
+              <label for="brand_parado"> Parado</label>
+            </li>
+            <li>
+              <input type="checkbox" name="brand" value="royalErado" id="brand_royalErado">
+              <label for="brand_royalErado"> Royal Erado</label>
+            </li>
+            <li>
+              <input type="checkbox" name="brand" value="kingway" id="brand_kingway">
+              <label for="brand_kingway"> Kingway</label>
+            </li>
+            <li>
+              <input type="checkbox" name="brand" value="Others" id="brand_others">
+              <label for="brand_others"> Others</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="myCart">
+      	<h4>My Cart <span class="inCart"><label class="b">0</label> items</span></h4>
+        <ul class="cartList">
+          <li class="row">
+          	<figure class="col-sm-3"><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="col-sm-9">
+            	<h6>Product Name</h6>
+                <div class="qBlock">
+                	<span>₹1,500</span>
+                    <input type="text" value="Qty: 1">
+                </div>
+            </div>
+          </li>
+          <li class="row">
+          	<figure class="col-sm-3"><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="col-sm-9">
+            	<h6>Product Name</h6>
+                <div class="qBlock">
+                	<span>₹1,500</span>
+                    <input type="text" value="Qty: 1">
+                </div>
+            </div>
+          </li>
+          <li class="row">
+          	<figure class="col-sm-3"><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="col-sm-9">
+            	<h6>Product Name</h6>
+                <div class="qBlock">
+                	<span>₹1,500</span>
+                    <input type="text" value="Qty: 1">
+                </div>
+            </div>
+          </li>
+        </ul>
+        <div class="finalTotal r">
+        	₹4,500
+        </div>
+      </div>
+      
+    </aside>
+    <div class="filterData">
+    	<h3 class="title">Alloy Wheels</h3>
+      <ul class="row-">
+      	<li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        </ul>
+        <h3 class="title">Silencers</h3>
+        <ul class="row-">
+      
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+        <li class="col-sm-4">
+        	<figure><img src="assets/images/icon/blank_4x3.png" alt="" class="blank"><img src="assets/images/product/alloyWheels.png"></figure>
+            <div class="name">Product Name</div>
+            <div class="brand">Parado</div>
+            <div class="price">₹1,500</div>
+            <aside>
+            	<input type="text" placeholder="Enter Quantity">
+                <button class="btn fill">Add to cart</button>
+            </aside>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="main">
+    <div class="rSkew">&copy; 2017 2wheels, all rights reserved.</div>
+  </footer>
+</div>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

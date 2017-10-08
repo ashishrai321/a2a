@@ -1,0 +1,168 @@
+nav {
+	position:relative;
+	top:50%;
+	font-size:1.25em;
+	color:@white;
+	white-space:nowrap;
+	float:left;
+	transform:skew(-25deg) translateY(-50%);
+	margin-top:8px;
+	margin-left:10px;
+	padding-left:20px;
+	&:before {
+		content:"";
+		left:0;
+		top:-10px;
+		bottom:-10px;
+		width:2px;
+		.white(.2);
+		position:absolute;
+	}
+	a {
+		color:inherit;
+		cursor:pointer;
+		@hoverEffect();
+		&:hover {
+			color:@baseColor1;
+		}
+	}
+	li {
+		display:inline-block;
+		margin-right:2em;
+		position:relative;
+		&:after {
+			content:"";
+			border:solid 5px @baseColor1;
+			border-left:solid 5px transparent;
+			border-right:solid 5px transparent;
+			border-bottom:none;
+			position:absolute;
+			left:50%;
+			margin-left:-1px;
+			bottom:-8px;
+			opacity:0;
+			@hoverEffect();
+		}
+		&.active {
+			a {
+				color:@baseColor1;
+			}
+			&:after {
+				opacity:1;
+			}
+		}
+	}
+}
+
+.subNav {
+	position:absolute;
+	left:0;
+	width:300px;
+	bottom:0;
+	top:0;
+	background-color:@grey;
+	padding:30px 20px;
+	h4 {
+		margin-bottom:10px;
+		position:relative;
+		span {
+			position:absolute;
+			right:0;
+			top:2px;
+			font-size:.75em;
+			color:@baseColor1;
+		}
+	}
+	.filter {
+		border-bottom:solid 4px @dGrey;
+		margin-bottom:15px;
+		label {
+			display:block;
+		}
+		.filterBlock {
+			margin-bottom:15px;
+			padding-bottom:15px;
+			border-bottom:solid 1px @dGrey;
+			&:last-child {
+				border-bottom:none;
+				padding-bottom:0;
+			}
+		}
+	}
+	.myCart {
+		.cartList {
+			padding-top:10px;
+			border-bottom:solid 2px @dGrey;
+			margin-bottom:15px;
+			li {
+				border-bottom:dotted 1px @dGrey;
+				margin-bottom:15px;
+				padding-bottom:15px;
+				&:last-child {
+					border-bottom:none;
+					margin-bottom:0;
+				}
+				figure {
+					background-color:@proBg;
+					border-radius:2px;
+					position:relative;
+					padding:0;
+					img {
+						position:absolute;
+						top:50%;
+						left:50%;
+						transform:translate3d(-50%,-50%,0);
+						max-width:90%;
+						max-height:90%;
+						&.blank {
+							width:100%;
+							position:static;
+							max-width:none;
+							max-height:none;
+						}
+					}
+				}
+				.col-sm-9 {
+					padding-right:0;
+				}
+				h6 {
+					font-size:1.25em;
+					margin-bottom:8px
+				}
+				.qBlock:extend(.clearfix all) {
+					span {
+						float:right;
+						font-size:1.15em;
+					}
+					input {
+						float:left;
+						max-width:50%;
+						border-bottom:none;
+						padding:0;
+						color:inherit;
+					}
+				}
+			}
+		}
+		.finalTotal {
+			font-size:1.75em;
+			color:@baseColor1;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

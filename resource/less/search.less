@@ -1,0 +1,28 @@
+.searchBlock {
+	color:@white;
+	position:absolute;
+	min-width:350px;
+	top:0px;
+	bottom:0;
+	z-index:6;
+	right:0;
+	background-color:#000;
+	display:none;
+	&:before {
+		height:inherit;
+		width:100%;
+		content:"";
+		position:absolute;
+		right:5.25vh;
+		top:0;
+		bottom:0;
+		transform:skewX(-6deg);
+		background-color:inherit;
+	}
+	@media (max-width:@lg) {
+		
+	}
+	@media (max-width:@sm) {
+
+	}
+}
