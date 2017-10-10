@@ -61,7 +61,20 @@ header {
 		
 	}
 	@media (max-width:@sm) {
-
+		height:60px;
+		.container {
+			.logo {
+				padding:10px 5px;
+				span {
+					transform: skew(-40deg) scale(0.45);
+					left: 25px;
+					top:calc(~"50% - 12px");
+				}
+			}
+			aside.filter {
+				display:none;
+			}
+		}
 	}
 }
 

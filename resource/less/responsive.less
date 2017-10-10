@@ -18,6 +18,56 @@
 }
 
 @media (max-width:@sm) {
+	
+	.aboutUs {
+		padding:4em 2em 8em;
+	}
+	
+	.product {
+		padding:5em 3em 4em;
+		& > ul {
+			& > li {
+				height:auto;
+				figure {
+					img {
+						position:static;
+						transform:none;
+					}
+				}
+				.desc {
+					.btn {
+						position:static;
+						display:block;
+						float:none;
+					}
+					
+				}
+			}
+		}
+	}
+	
+	.info {
+		padding:1em 0 0;
+		h2 {
+			margin-bottom:25px;
+			img {
+				vertical-align:middle;
+			}
+		}
+		.contact, .stayUpdated {
+			padding:3em 2em;
+		}
+		.otherMediums {
+			padding-top:0em;
+			margin-top:2em;
+		}
+		.privacyInfo {
+			opacity:.5;
+			font-size:.85em;
+		}
+	}
+
+	
 	.sm-hide, .sm-brHide br {
 		display:none !important;
 	}
