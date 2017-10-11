@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><meta name="robots" content="noindex">
+<style>
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding: 20px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 7vmin;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translateZ(205px);
+          transform: translateZ(205px);
+}
+
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.wrap img {
+  position: absolute;
+  -webkit-transform: translateZ(105px);
+          transform: translateZ(105px);
+  left: 0;
+  top: 0;
+  scale: 1.5;
+}
+.wrap #bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: no-repeat center center;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all .5s linear 0s;
+  transition: all .5s linear 0s;
+}
+</style></head><body>
+<div class="wrap">
+  <div id="bg" style="transform: translate3d(10.8px, -5.55px, 0px) rotateY(-5.55deg);">
+    
+    <img src="assets/images/banner/RE-banner3.jpg">
+    <h1>Take a look around</h1>
+    
+    
+  </div>
+  
+</div>
+
+<!-- Effect inspired by https://codepen.io/supah/pen/RrzREx -->
+<script src="assets/js/lib.js"></script>
+<script>
+(function(){
+		var lFollowX = 0,
+			lFollowY = 0,
+			x = 0,
+			y = 0,
+			friction = 1;
+		
+		function moveBackground() {
+		  x += (lFollowX - x) * friction;
+		  y += (lFollowY - y) * friction;
+		  
+		  translate = 'translate3d('+ x +'px,'+ y +'px, 0) rotateY(' + y + 'deg)';
+		
+		  $('#bg').css({'transform': translate});
+		
+		  window.requestAnimationFrame(moveBackground);
+		}
+		
+		$(window).on('mousemove mouseover', function(e) {
+		
+		  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+		  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+		  lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+		  lFollowY = (10 * lMouseY) / 100;
+		
+		});
+		moveBackground();
+	})();
+
+
+//# sourceURL=pen.js
+</script>
+</body></html>
